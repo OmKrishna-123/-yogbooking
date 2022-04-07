@@ -15,6 +15,7 @@ class Events(models.Model):
     image = models.ImageField(upload_to="images")
     def __str__(self):
         return self.name
+    #hello
 class Blog(models.Model):
     name = models.CharField(max_length=20, default="")
     img1 = models.ImageField(upload_to="yogbookingapp/images")
