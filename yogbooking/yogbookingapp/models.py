@@ -53,7 +53,7 @@ class User(models.Model):
     def __str__(self):
         return self.name
 class Upcommingevent(models.Model):
-    name = models.CharField(max_length=50,default="")
+    name =models.CharField(max_length=50,default="")
     date = models.DateField()
     description = models.CharField(max_length=200)
     image = models.ImageField(upload_to="yogbookingapp/images")
